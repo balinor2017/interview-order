@@ -1,4 +1,4 @@
-# gitlab.imgto-cdn.com:11022/rs/orders.git
+# Order Service For Interview
 
 
 ### Pre-requirement to run the services
