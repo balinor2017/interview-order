@@ -1,0 +1,96 @@
+syntax = "proto3";
+package pb;
+
+import "pb/base.proto";
+
+// the Returns always use Response type.
+service OrderService {
+    rpc GetOrderByID(GetOrderByIDRequest) returns (Response) {}
+    rpc CreateOrder(Order) returns (Response) {}
+    rpc GetTripByOrderID(GetTripByOrderIDRequest) returns (Response) {}
+    rpc UpdateOrderDispacherStatus(OrderDispacherStatusRequest) returns (Response) {}
+}
+
+message OrderDispacherStatusRequest {
+      int64   order_id = 1;
+      int64	  driver_id = 2;
+      double  driver_latitude = 3;
+      double  driver_longitude = 4;
+      int64   status     = 5;
+}
+
+message GeneraResponse {
+    string msg = 1;
+}
+
+
+message GetTripByOrderIDRequest {
+    int64 id = 1;
+}
+
+
+message GetTripByOrderIDResponse {
+    OrderTrip data =1;
+}
+
+message GetOrderByIDRequest {
+    int64 id = 1;
+}
+
+message GetOrderByIDResponse {
+    Order data =1;
+}
+
+message Order {
+    int64   order_id = 1;
+    int64   customer_id = 2;
+    string	customer_name = 3;
+    string	customer_mobile = 4;
+    int64	driver_id = 5;
+    string	driver_name = 6;
+    string	driver_mobile = 7;
+    string	vehicle_id = 8;
+    string	vehicle_no = 9;
+    string	pick_time = 10;
+    double	pickup_latitude = 11;
+    double	pickup_longitude = 12;
+    double	dropoff_latitude = 13;
+    double	dropoff_longitude = 14;
+    int64  	status     = 15;
+    string	createdAt    = 16;
+    string	updatedAt    = 17;
+}
+
+
+message OrderTrip {
+    int64   trip_id = 1;
+    int64   order_id = 2;
+    int64   customer_id = 3;
+    int64	driver_id = 4;
+    string	start_time = 5;
+    string	end_time = 6;
+    double	vacant_distance = 7;
+    double	engaged_distance = 8;
+    double	pickup_latitude = 9;
+    double	pickup_longitude = 10;
+    double	dropoff_latitude = 11;
+    double	dropoff_longitude = 12;
+    int64  	status     = 13;
+    string	createdAt    = 14;
+    string	updatedAt    = 15;
+}
+
+message OrderDispacherStatus {
+    int64   order_id = 1;
+    int64	driver_id = 2;
+    double	driver_latitude = 3;
+    double	driver_longitude = 4;
+    int64  	status   = 5;
+}
+
+
+
+message OrderListResponse{
+    repeated Order all_order=1;
+}
+

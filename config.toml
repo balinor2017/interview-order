@@ -1,0 +1,34 @@
+[server]
+mode = "dev"
+http_port = 8003
+grpc_port = 8503
+debug = true
+http_timeout = 10000
+jwt_timeout = 8640000
+log_path = "./log/orders.log"
+
+
+
+[dev]
+timezone = "Asia/Shanghai"
+driver_base_url= "http://localhost:8001"
+passenger_base_url= "http://localhost:8002"
+order_base_url= "http://localhost:8003"
+tracker_base_url= "http://localhost:8004"
+dispacher_base_url= "http://localhost:8005"
+
+
+
+[database]
+user = "balinor"
+password = "5217281"
+dbname = "tix_new"
+host = "127.0.0.1"
+port = "5432"
+
+[rabbitmq]
+amqp_url = "amqp://127.0.0.1:5672/"
+
+[cache]
+redis_main = "127.0.0.1:6379"
+
