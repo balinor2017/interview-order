@@ -78,6 +78,10 @@ func main() {
 		UpdateOrderDispacherStatusEndpoint: endpoint.MakeUpdateOrderDispacherStatusEndpoint(svcOrder),
 	}
 
+	// initiate pubsub service
+	service.InitMQPublisher()
+	service.InitMQConsumer()
+
 	errChan := make(chan error)
 
 	// Error channel.

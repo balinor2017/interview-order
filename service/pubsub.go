@@ -3,9 +3,7 @@ package service
 // pubsubService is an implementation of pubsub package
 
 import (
-	"fmt"
-	"os"
-
+	"github.com/interview-order/config"
 	"github.com/interview-order/flags"
 	"github.com/interview-order/pubsub"
 )
@@ -35,10 +33,6 @@ func InitMQConsumer() {
 // getRabbitURL returns AMQP connection url and crash if no such env found
 func getRabbitURL() string {
 	// Get connection url
-	url, ok := os.LookupEnv("AMQP_URL")
-	if !ok {
-		fmt.Println("AMQP_URL is not set in system environment")
-		os.Exit(2)
-	}
+	url := config.MustGetString("rabbitmq.AMQP_URL")
 	return url
 }
