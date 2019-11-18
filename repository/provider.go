@@ -17,11 +17,11 @@ var (
 
 func InitDbFactory() error {
 
-	dbUser = config.MustGetString("mysql.user")
-	dbPassword = config.MustGetString("mysql.password")
-	dbName = config.MustGetString("mysql.dbname")
-	dbHost = config.MustGetString("mysql.host")
-	dbPort = config.MustGetString("mysql.port")
+	dbUser = config.MustGetString("database.user")
+	dbPassword = config.MustGetString("database.password")
+	dbName = config.MustGetString("database.dbname")
+	dbHost = config.MustGetString("database.host")
+	dbPort = config.MustGetString("database.port")
 	redisMain = config.MustGetString("cache.redis_main")
 
 	var err error
