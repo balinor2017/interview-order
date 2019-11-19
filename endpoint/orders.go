@@ -5,9 +5,9 @@ import (
 
 	"github.com/go-kit/kit/endpoint"
 	"github.com/golang/protobuf/ptypes"
-	"github.com/interview-order/models"
-	"github.com/interview-order/pb"
-	"github.com/interview-order/service"
+	"github.com/balinor2017/interview-order/models"
+	"github.com/balinor2017/interview-order/pb"
+	"github.com/balinor2017/interview-order/service"
 )
 
 // Wrapping Endpoints as a Service implementation.

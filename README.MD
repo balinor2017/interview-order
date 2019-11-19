@@ -3,7 +3,8 @@
 
 ### Pre-requirement to run the services
 *  1. Redis          (v. 4.0.9+)
-*  2. Mysql       (v. 5.7.27)
+*  2. PostgreSQL     (v. 11.3)
+*  3. RabbitMQ       ()    
 
 ##  Generate pb file
 *   grpc
@@ -13,4 +14,4 @@
 * config.toml
 
 ## Start local
-* go run main.go -config config.toml
+* go run main.go -- config.toml

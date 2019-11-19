@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/interview-order/flags"
-	"github.com/interview-order/models"
-	"github.com/interview-order/util"
+	"github.com/balinor2017/interview-order/flags"
+	"github.com/balinor2017/interview-order/models"
+	"github.com/balinor2017/interview-order/util"
 	"github.com/jmoiron/sqlx"
 	log "github.com/sirupsen/logrus"
 )

@@ -3,9 +3,9 @@ package service
 // pubsubService is an implementation of pubsub package
 
 import (
-	"github.com/interview-order/config"
-	"github.com/interview-order/flags"
-	"github.com/interview-order/pubsub"
+	"github.com/balinor2017/interview-order/config"
+	"github.com/balinor2017/interview-order/flags"
+	"github.com/balinor2017/interview-order/pubsub"
 )
 
 // Publisher connection instance

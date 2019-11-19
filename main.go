@@ -15,13 +15,13 @@ import (
 
 	"time"
 
-	"github.com/interview-order/config"
-	"github.com/interview-order/endpoint"
-	"github.com/interview-order/pb"
-	"github.com/interview-order/repository"
-	"github.com/interview-order/server"
-	"github.com/interview-order/service"
-	"github.com/interview-order/util"
+	"github.com/balinor2017/interview-order/config"
+	"github.com/balinor2017/interview-order/endpoint"
+	"github.com/balinor2017/interview-order/pb"
+	"github.com/balinor2017/interview-order/repository"
+	"github.com/balinor2017/interview-order/server"
+	"github.com/balinor2017/interview-order/service"
+	"github.com/balinor2017/interview-order/util"
 	log "github.com/sirupsen/logrus"
 )
 

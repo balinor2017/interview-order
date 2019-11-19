@@ -6,8 +6,8 @@ import (
 
 	httptransport "github.com/go-kit/kit/transport/http"
 
-	"github.com/interview-order/dec_enc"
-	"github.com/interview-order/endpoint"
+	"github.com/balinor2017/interview-order/dec_enc"
+	"github.com/balinor2017/interview-order/endpoint"
 )
 
 func NewHttpServer(ctx context.Context, endpoints endpoint.Endpoints) http.Handler {
