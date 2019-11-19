@@ -5,15 +5,15 @@ import (
 	"errors"
 	"math"
 
-	"github.com/interview-order/models"
-	"github.com/interview-order/pubsub"
-	"github.com/interview-order/repository"
-	"github.com/interview-order/util"
+	"github.com/balinor2017/interview-order/models"
+	"github.com/balinor2017/interview-order/pubsub"
+	"github.com/balinor2017/interview-order/repository"
+	"github.com/balinor2017/interview-order/util"
 	log "github.com/sirupsen/logrus"
 
 	"time"
 
-	"github.com/interview-order/flags"
+	"github.com/balinor2017/interview-order/flags"
 )
 
 // OrderServiceInterface define order service interface

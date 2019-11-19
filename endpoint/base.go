@@ -8,8 +8,8 @@ import (
 	empty "github.com/golang/protobuf/ptypes/empty"
 
 	ptypes "github.com/golang/protobuf/ptypes"
-	"github.com/interview-order/pb"
-	"github.com/interview-order/service"
+	"github.com/balinor2017/interview-order/pb"
+	"github.com/balinor2017/interview-order/service"
 )
 
 // endpoints wrapper

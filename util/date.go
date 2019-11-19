@@ -3,7 +3,7 @@ package util
 import (
 	"time"
 
-	"github.com/interview-order/config"
+	"github.com/balinor2017/interview-order/config"
 )
 
 var (

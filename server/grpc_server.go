@@ -7,9 +7,9 @@ import (
 
 	grpctransport "github.com/go-kit/kit/transport/grpc"
 
-	"github.com/interview-order/dec_enc"
-	"github.com/interview-order/endpoint"
-	"github.com/interview-order/pb"
+	"github.com/balinor2017/interview-order/dec_enc"
+	"github.com/balinor2017/interview-order/endpoint"
+	"github.com/balinor2017/interview-order/pb"
 )
 
 type grpcServer struct {

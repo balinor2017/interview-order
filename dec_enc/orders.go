@@ -7,7 +7,7 @@ import (
 
 	"github.com/golang/protobuf/jsonpb"
 
-	"github.com/interview-order/pb"
+	"github.com/balinor2017/interview-order/pb"
 )
 
 // UpdateOrderDispacherStatus

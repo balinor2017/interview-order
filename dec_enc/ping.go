@@ -8,7 +8,7 @@ import (
 	jsonpb "github.com/golang/protobuf/jsonpb"
 	empty "github.com/golang/protobuf/ptypes/empty"
 
-	"github.com/interview-order/pb"
+	"github.com/balinor2017/interview-order/pb"
 )
 
 func DecodeGRPCPingRequest(_ context.Context, request interface{}) (interface{}, error) {

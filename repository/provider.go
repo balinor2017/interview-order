@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/interview-order/config"
+	"github.com/balinor2017/interview-order/config"
 	log "github.com/sirupsen/logrus"
 )
 
